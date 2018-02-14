@@ -2,6 +2,6 @@
 
 	class RouteModel {
 		static public function Route(){
-			return 'http://localhost/symfhy/';
+			return 'http://www.symfhy.com/symfhy/';
 		}
 	}

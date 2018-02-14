@@ -1,3 +1,10 @@
+<?php 
+  $item = null;
+  $value = null;
+
+  $header = BodyController::ctrShowComponents($item, $value);
+?>
+
    <header>
       
        <nav  class="container d-flex justify-content-start">
@@ -7,15 +14,11 @@
           </ul>
           
            <ul class="d-flex align-items-center">
-                  <li>
-                    <a href="about.php">About</a>
+                  <?php foreach ($header as $ul => $li): ?>
+                    <li>
+                    <a href="<?php echo $li['url']; ?>"><?php echo $li['route']; ?></a>
                   </li>
-                  <li>
-                    <a href="#">Terms</a>
-                  </li>
-                   <li>
-                    <a href="#">Privacy Policy</a>
-                   </li>
+                  <?php endforeach ?>
                    
                
            </ul>    
