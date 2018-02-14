@@ -25,13 +25,17 @@ header{
     margin: 0 auto;
 }
 
+header nav {
+    height: 80px;
+}
+
 header nav ul li{
     display: inline-blocK;
 }
 
-header nav ul{
+/*header nav ul{
     margin-top: 40px;
-}
+}*/
 
 nav ul li a{
     padding:12px 30px;
@@ -40,7 +44,6 @@ nav ul li a{
 }
 
 .brand {
-    margin-top: 0px;
     float:left;
     padding-left: 0px;
 }
@@ -55,15 +58,16 @@ nav ul li a{
     display: flex;
 }
 
-.img{
+img{
     width: 100%;
 }
 
-.header-content{
+.content{
     margin-top: 100px;
+    padding-bottom: 40px;
 }
 
-.header-content h2{
+.content h2{
     text-transform: uppercase;
     color: rgb(44, 44, 44);
     font-weight: 700;
@@ -85,16 +89,17 @@ nav ul li a{
     padding: 10px 23px;
     border: 0px;
     border-radius: 40px;
+    border: 1px solid transparent;
     color: #fff;
     margin-top: 30px;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 13px;
     text-decoration: none;
+    transition: all .5s ease;
 }
 
 .btn:hover {
-    transition: all .9s;
     background: #fff;
     color: #4400f5;
     border: 1px solid #4400f5;
@@ -217,4 +222,25 @@ p.info {
 
 .infov {
     margin-top: 100px;
+}
+
+
+/* 404 */
+.texto {
+    float: left;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.texto h2{
+    text-align: center;
+    color: #4400f5;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+.texto p{
+    color: #9E9A9A;
+    font-weight: 300;
 }
